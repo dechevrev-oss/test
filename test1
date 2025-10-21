@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diva Nails - Institut de beauté des ongles</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5e6e8 0%, #f9f3f0 100%);
+            color: #5a4a4a;
+        }
+
+        header {
+            background: linear-gradient(to bottom, rgba(255,255,255,0.95), rgba(255,255,255,0.9));
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo-container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .logo {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 50%;
+            padding: 10px;
+            box-shadow: 0 4px 15px rgba(200, 150, 160, 0.2);
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: #c8969c;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: 500;
+            transition: color 0.3s;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #a67c82;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, rgba(200, 150, 160, 0.1) 0%, rgba(245, 230, 232, 0.3) 100%);
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            color: #c8969c;
+            margin-bottom: 20px;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        .hero p {
+            font-size: 1.3em;
+            color: #7a6a6a;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .section {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .section h2 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #c8969c;
+            margin-bottom: 50px;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(200, 150, 160, 0.15);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(200, 150, 160, 0.25);
+        }
+
+        .service-card h3 {
+            color: #c8969c;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            font-weight: 400;
+        }
+
+        .service-card p {
+            color: #7a6a6a;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            color: #a67c82;
+            font-weight: 600;
+            font-size: 1.2em;
+        }
+
+        .contact {
+            background: white;
+            padding: 60px 20px;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .contact h2 {
+            color: #c8969c;
+            margin-bottom: 30px;
+        }
+
+        .contact-info {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-info p {
+            font-size: 1.1em;
+            margin: 15px 0;
+            color: #7a6a6a;
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #c8969c, #b88892);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            margin-top: 30px;
+            font-weight: 500;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(200, 150, 160, 0.3);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(200, 150, 160, 0.4);
+        }
+
+        footer {
+            background: #f5e6e8;
+            text-align: center;
+            padding: 30px 20px;
+            color: #7a6a6a;
+            margin-top: 80px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+
+            .hero p {
+                font-size: 1.1em;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="logo">
+                <img src="https://drive.google.com/uc?export=view&id=1O0oxorAyjZS8eUHk4WZLVt1AX1eWKh8p" alt="Logo Diva Nails" style="width: 100%; height: 100%; object-fit: contain;">
+            </div>
+        </div>
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#services">Services</a>
+            <a href="#tarifs">Tarifs</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="accueil" class="hero">
+        <h1>Diva Nails</h1>
+        <p>Sublimez vos ongles avec élégance et raffinement. Votre beauté mérite le meilleur soin.</p>
+    </section>
+
+    <section id="services" class="section">
+        <h2>Nos Services</h2>
+        <div class="services">
+            <div class="service-card">
+                <h3>💅 Manucure Classique</h3>
+                <p>Soin complet des ongles avec pose de vernis traditionnel et finitions parfaites.</p>
+                <div class="price">À partir de 25€</div>
+            </div>
+            <div class="service-card">
+                <h3>✨ Pose Gel</h3>
+                <p>Pose de gel pour des ongles brillants et résistants pendant plusieurs semaines.</p>
+                <div class="price">À partir de 45€</div>
+            </div>
+            <div class="service-card">
+                <h3>💎 Nail Art</h3>
+                <p>Créations personnalisées et designs uniques pour des ongles qui vous ressemblent.</p>
+                <div class="price">À partir de 60€</div>
+            </div>
+            <div class="service-card">
+                <h3>🌸 Manucure Spa</h3>
+                <p>Moment de détente avec gommage, massage et soin hydratant complet.</p>
+                <div class="price">À partir de 35€</div>
+            </div>
+            <div class="service-card">
+                <h3>💖 Extensions d'Ongles</h3>
+                <p>Allongement naturel ou capsules pour des ongles longs et élégants.</p>
+                <div class="price">À partir de 55€</div>
+            </div>
+            <div class="service-card">
+                <h3>🦶 Pédicure</h3>
+                <p>Soin complet des pieds avec gommage, lime et pose de vernis.</p>
+                <div class="price">À partir de 30€</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Prenez Rendez-vous</h2>
+        <div class="contact-info">
+            <p>📍 123 Avenue de la Beauté, 75001 Paris</p>
+            <p>📞 01 23 45 67 89</p>
+            <p>📧 contact@divanails.fr</p>
+            <p>🕐 Lun - Sam : 9h - 19h</p>
+            <a href="#" class="btn">Réserver en ligne</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Diva Nails - Tous droits réservés</p>
+    </footer>
+</body>
+</html>
